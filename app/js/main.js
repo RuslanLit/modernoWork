@@ -12,7 +12,6 @@ $(".rate-star").rateYo({
     slidesToShow: 4,
     slidesToScroll:4,
     infinite: true
-
   });
 
    $(".js-range-slider").ionRangeSlider({
@@ -45,7 +44,7 @@ $(".rate-star").rateYo({
     $('.header__box').toggleClass('active');
   })
 
-  $('.product-one__tabs .tab, .settings__tabs .tabs').on('click', function (event) {
+  $('.product-one__tabs .tab, .settings__tabs .tab').on('click', function (event) {
     var id = $(this).attr('data-id');
     $('.product-one__tabs, .settings__tabs').find('.tab-item').removeClass('active-tab').hide();
     $('.product-one__tabs .tabs, .settings__tabs .tabs').find('.tab').removeClass('active');
@@ -54,7 +53,6 @@ $(".rate-star").rateYo({
     return false;
   });
 
-var mixer = mixitup('.products__inner-box');
-
+var mixer = mixitup('.products__inner-btn');
 
 });
