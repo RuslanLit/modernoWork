@@ -274,6 +274,11 @@
     }
 }
 @media (max-width: 640px) {
+    .products__inner-btn button {
+        display: inline-block;
+        width: 100%;
+        margin-bottom: 10px;
+    }
     .tutorial__item {
         flex-basis: 100%;
     }
