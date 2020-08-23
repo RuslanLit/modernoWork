@@ -16,7 +16,9 @@ body {
     position: relative;
     overflow-x: hidden;
 }
-button {
+button,
+input,
+textarea {
         outline: none;
 }
 
@@ -103,7 +105,9 @@ body {
 // start bredcrumbs
 .breadcrumbs {
     &__inner {
-        padding: 45px 40px;
+        padding: 45px 0 40px;
+        overflow: hidden;
+        width: 1200px;
     }
     &__list {
         li {

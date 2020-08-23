@@ -11,7 +11,32 @@ $(".rate-star").rateYo({
     arrows:false,
     slidesToShow: 4,
     slidesToScroll:4,
-    infinite: true
+    infinite: true,
+    responsive: [
+      {
+        breakpoint: 1900,
+        settings: {
+          slidesToShow: 3,
+          slidesToScroll: 3,
+          infinite: true,
+          dots: true
+        }
+      },
+      {
+        breakpoint: 1441,
+        settings: {
+          slidesToShow: 2,
+          slidesToScroll: 2
+        }
+      },
+      {
+        breakpoint: 801,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1
+        }
+      },
+    ]
   });
 
    $(".js-range-slider").ionRangeSlider({
@@ -53,6 +78,8 @@ $(".rate-star").rateYo({
     return false;
   });
 
-var mixer = mixitup('.products__inner-btn');
+  $('input[type="file"], select').styler();
+
+  var mixer = mixitup('.products__inner-box');
 
 });
